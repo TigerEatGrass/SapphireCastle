@@ -18,4 +18,10 @@ app.get('/', function (req, res) {
 	});
 });
 
+app.get('/iphone', function (req, res) {
+  	res.render('iphone.html', function(err, html) {
+	  	res.send(html);
+	});
+});
+
 var server = app.listen(80, function () {});
